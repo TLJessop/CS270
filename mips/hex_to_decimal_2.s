@@ -20,8 +20,7 @@ while:
 	la $a1, my_string
 	jal  axtoi
 	
-	li $t0, 1
-	beq $v0, $t0, end
+	beq $v0, 1, end
 	
 	la $a0, error
 	jal PrintString
